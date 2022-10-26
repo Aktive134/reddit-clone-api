@@ -10,6 +10,7 @@ interface IJWT {
 }
 interface IDATABASE {
    url: string
+   urlSample: string
 }
 
 interface PRODATABASE {
@@ -37,6 +38,7 @@ const Configuration: IConfig = {
     },
     Database: {
         url: process.env.MONGO_URL as string,
+        urlSample: process.env.MONGO_URL_SAMPLE as string,
     },
     Production: {
         database: process.env.PRODUCTION_DATABASE as string,
