@@ -8,7 +8,6 @@ const validateLoginData = async (
     next: NextFunction
 ) => {
     try {
-        const { email, password } = req.body;
         const Schema = Joi.object({
             email : Joi.string().required(),
             password: Joi.string().min(8).required(),

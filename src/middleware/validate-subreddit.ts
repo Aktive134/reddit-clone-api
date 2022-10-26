@@ -8,13 +8,9 @@ const validateSubreddit = async (
     next: NextFunction
 ) => {
     try {
-        const { name, slogan, avatar, cover } = req.body;
-        
         const Schema = Joi.object({
             name: Joi.string().required(),
-            slogan: Joi.string().required(),
-            avatar: Joi.string(),
-            cover: Joi.string()
+            slogan: Joi.string().required()
         });
 
         await Schema.validateAsync(req.body);
