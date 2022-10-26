@@ -125,6 +125,6 @@ async function createComment(
     .db('Reddit-clone_sample')
     .collection('comments')
     .insertOne(newComment)
-  console.log(`New Post created with the following id: ${result.insertedId}`)
+  console.log(`New Comment created with the following id: ${result.insertedId}`)
   return result.insertedId
 }
