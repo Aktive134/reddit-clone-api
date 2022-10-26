@@ -26,6 +26,7 @@ async function main() {
 
     // Make the appropriate DB calls
     const subReddit = await createSubreddit(client, {
+      id: "635925e5f0f761b3c4f57a1e",
       name: 'Programming redefined',
       slogan: 'We live for humour',
     })
@@ -60,7 +61,7 @@ main().catch(console.error)
  */
 async function createSubreddit(
   client: MongoClient,
-  newSubreddit: { name: string; slogan: string },
+  newSubreddit: { id: string, name: string; slogan: string },
 ) {
   const result = await client
     .db('Reddit-clone_sample')

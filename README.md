@@ -13,6 +13,7 @@ An API that mocks a section of Reddit, it that allows users to create a sign-up 
 -create a subreddit
 -create a post under a subreddit
 -create a comment on the post
+** created a simple mock data and monitored changes using mongoDb change streams.
 
 
 - [github repository](https://github.com/Aktive134/reddit-clone-api/)
