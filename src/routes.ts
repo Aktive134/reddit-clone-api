@@ -1,5 +1,7 @@
 import { Router, Request, Response } from "express"; 
 import authRouter from "./features/auth/auth.routes";
+import commentRouter from "./features/comment/comment.routes";
+import postRouter from "./features/post/post.routes";
 import subredditRouter from "./features/subreddit/subreddit.routes";
 import validateToken from "./middleware/validate-token";
 
@@ -20,5 +22,7 @@ router.get("/", (
 router.use(authRouter);
 router.use(validateToken);
 router.use(subredditRouter);
+router.use(postRouter);
+router.use(commentRouter);
 
 export default router

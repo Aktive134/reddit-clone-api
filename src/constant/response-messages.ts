@@ -4,10 +4,12 @@ const responses = {
     serverError: "ERROR 500 : INTERNAL SERVER ERROR",
     userExist: "User already exists",
     userCreated: "User added successfully",
+    postCreated: "Post Created",
+    redditCreated: "Subreddit Created",
+    commentCreated: "Comment Created",
     loginSuccess: "Login successfully",
     logoutSuccess: "Logout successful",
-    redditCreated: "Subreddit Created",
-    redditUpdated: "Subreddit Updated"
+    redditUpdated: "Subreddit Updated",
 }
 
 export default responses
