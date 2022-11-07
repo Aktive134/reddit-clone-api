@@ -9,7 +9,7 @@
 
  ## Project description.
 
-An API that mocks a section of Reddit, it that allows users to create a sign-up and login, and perform the following
+An API that mocks a section of Reddit, it allows users to create a sign-up and login, and perform the following
 -create a subreddit
 -create a post under a subreddit
 -create a comment on the post
